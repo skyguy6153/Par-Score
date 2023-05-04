@@ -1,0 +1,32 @@
+// This is a program to practice usuing the if/ else if function
+/* The if/else statement runs a block of code if a condition is true.
+   if a condition is false, another block of code can be executed.
+   Here are some conditional statements to follow:
+   - Use "if" to specify a block of code to be executed, if a specified condition is true.
+   - Use "else" to specify a block of code to be executed, if the same condition is false 
+   - Use "else if" to specify a new condition to test, if the first condition is false.
+   - Use "switch" to select one of many blocks of code to be executed.
+*/
+// Name of Par Scores
+
+//remember the const variable is declared for a value that WILL NOT change.
+const names = ["Hole In One!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Straight Garbage!"]; 
+
+function golfScore(par, strokes) {
+  if (strokes == 1) {
+    return "Hole In One!";
+  } else if (strokes <= par-2) {
+    return ("Eagle");
+  } else if (strokes == par-1) {
+    return ("Birdie");
+  } else if (strokes == par) {
+    return ("Par");
+  } else if (strokes == par+1) {
+    return ("Bogey");
+  } else if (strokes == par+2) {
+    return ("Double Bogey");
+  } else if (strokes >= par)
+  return ("Straight Garbage!")
+}
+// Log to console
+console.log(golfScore(1, 6))
