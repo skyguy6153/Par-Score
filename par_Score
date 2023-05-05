@@ -7,8 +7,9 @@
    - Use "else if" to specify a new condition to test, if the first condition is false.
    - Use "switch" to select one of many blocks of code to be executed.
 */
-// Name of Par Scores
 
+
+// Name of Par Scores
 //remember the const variable is declared for a value that WILL NOT change.
 const names = ["Hole In One!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Straight Garbage!"]; 
 
@@ -27,6 +28,6 @@ function golfScore(par, strokes) {
     return ("Double Bogey");
   } else if (strokes >= par)
   return ("Straight Garbage!")
-}
+} 
 // Log to console
 console.log(golfScore(1, 6))
